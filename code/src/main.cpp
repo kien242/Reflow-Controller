@@ -9,8 +9,6 @@
 
 #define SDA_PIN         33
 #define SCL_PIN         35
-#define APA102_SDI_PIN  38
-#define APA102_CLK_PIN  37
 #define OLED_RST_PIN    45
 #define CS_MAX1_PIN     13
 #define CS_MAX2_PIN     12
@@ -29,6 +27,7 @@
 #define BTN3_PIN        40
 
 
+#define LED_PIN         37
 #define NUM_LEDS        1
 CRGB leds[NUM_LEDS];
 
@@ -302,7 +301,7 @@ void setup() {
   digitalWrite(SSR2_PIN, LOW);
 
   delay(100);
-  FastLED.addLeds<APA102, APA102_SDI_PIN, APA102_CLK_PIN, BGR>(leds, NUM_LEDS);
+  FastLED.addLeds<NEOPIXEL, LED_PIN>(leds, NUM_LEDS);
   FastLED.setBrightness(100);
   delay(100);
 

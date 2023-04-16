@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ESP32-S2-WROVER")(type "KiCad")(uri "${KIPRJMOD}/Lib/Sym/ESP32-S2-WROVER.kicad_sym")(options "")(descr ""))
+  (lib (name "MAX6675ISA_")(type "KiCad")(uri "${KIPRJMOD}/Lib/Sym/MAX6675ISA_.kicad_sym")(options "")(descr ""))
+)
